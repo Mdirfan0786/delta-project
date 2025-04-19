@@ -54,7 +54,7 @@ const listingSchema = new Schema({
       "mountains",
       "trending",
       "rooms",
-      "iconc cities",
+      "iconic cities",
       "castles",
       "amazing pools",
       "camping",
@@ -62,6 +62,7 @@ const listingSchema = new Schema({
       "arctic",
       "domes",
     ],
+    default: "trending",
   },
 });
 

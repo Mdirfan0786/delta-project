@@ -19,6 +19,7 @@ const User = require("./models/user.js");
 const listingRouter = require("./router/listing.js");
 const reviewRouter = require("./router/review.js");
 const userRouter = require("./router/user.js");
+const filtersRouter = require("./router/filters.js");
 
 const dburl = process.env.ATLASDB_URL;
 
@@ -65,9 +66,9 @@ const sessionOptions = {
   },
 };
 
-// app.get("/", (req, res) => {
-//   res.send("root is working!");
-// });
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
 
 app.use(session(sessionOptions));
 app.use(flash());
@@ -91,6 +92,7 @@ app.use((req, res, next) => {
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/", userRouter);
+app.use("/listings/:category", filtersRouter);
 
 // creating error hanlder for all routes
 app.all("*", (req, res, next) => {
