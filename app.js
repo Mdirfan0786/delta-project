@@ -92,10 +92,6 @@ app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/", userRouter);
 
-app.get("/listings/trending", (req, res) => {
-  res.send("trending!");
-});
-
 // creating error hanlder for all routes
 app.all("*", (req, res, next) => {
   next(new ExpressError(404, "Page not found!"));
