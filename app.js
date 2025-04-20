@@ -90,9 +90,9 @@ app.use((req, res, next) => {
 
 // listings and reviews routes
 app.use("/listings", listingRouter);
+app.use("/listings", filtersRouter);
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/", userRouter);
-app.use("/listings/:category", filtersRouter);
 
 // creating error hanlder for all routes
 app.all("*", (req, res, next) => {
