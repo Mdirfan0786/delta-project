@@ -71,6 +71,14 @@ app.get("/", (req, res) => {
   res.redirect("/listings");
 });
 
+app.get("/privacy", (req, res) => {
+  res.render("privacy&terms/privacy.ejs");
+});
+
+app.get("/terms", (req, res) => {
+  res.render("privacy&terms/terms.ejs");
+});
+
 app.use(session(sessionOptions));
 app.use(flash());
 
@@ -87,13 +95,6 @@ app.use((req, res, next) => {
   res.locals.error = req.flash("error");
   res.locals.currUser = req.user;
   next();
-});
-
-app.get("/privacy", (req, res) => {
-  res.render("privacy&terms/privacy.ejs");
-});
-app.get("/terms", (req, res) => {
-  res.render("privacy&terms/terms.ejs");
 });
 
 // listings and reviews routes
