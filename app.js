@@ -17,6 +17,7 @@ const LocalStrategy = require("passport-local");
 const User = require("./models/user.js");
 const Listing = require("./models/listing.js");
 
+const privacyTermsRouter = require("./router/privacyTerms.js");
 const listingRouter = require("./router/listing.js");
 const reviewRouter = require("./router/review.js");
 const userRouter = require("./router/user.js");
@@ -71,14 +72,6 @@ app.get("/", (req, res) => {
   res.redirect("/listings");
 });
 
-app.get("/privacy", (req, res) => {
-  res.render("privacy&terms/privacy.ejs");
-});
-
-app.get("/terms", (req, res) => {
-  res.render("privacy&terms/terms.ejs");
-});
-
 app.use(session(sessionOptions));
 app.use(flash());
 
@@ -100,7 +93,7 @@ app.use((req, res, next) => {
 // listings and reviews routes
 app.use("/listings", listingRouter, filtersRouter);
 app.use("/listings/:id/reviews", reviewRouter);
-app.use("/", userRouter);
+app.use("/", userRouter, privacyTermsRouter);
 
 // creating error hanlder for all routes
 app.all("*", (req, res, next) => {
