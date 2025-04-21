@@ -8,6 +8,32 @@ module.exports.index = async (req, res) => {
   res.render("listings/index.ejs", { allListings });
 };
 
+module.exports.search = async (req, res) => {
+  const searchVal = req.query.search?.trim();
+
+  if (!searchVal) {
+    req.flash("error", "Please enter a search term!");
+    return res.redirect("/listings");
+  }
+
+  const filters = await Listing.find({
+    $or: [
+      { title: { $regex: searchVal, $options: "i" } },
+      { description: { $regex: searchVal, $options: "i" } },
+      { location: { $regex: searchVal, $options: "i" } },
+      { country: { $regex: searchVal, $options: "i" } },
+    ],
+  });
+
+  if (!filters.length) {
+    req.flash("error", `No listings found for "${searchVal}"`);
+    return res.redirect("/listings");
+  }
+
+  req.flash("success", `Found ${filters.length} listings for "${searchVal}"`);
+  res.render("filters/filters.ejs", { filters, searchVal });
+};
+
 module.exports.renderNewForm = (req, res) => {
   res.render("listings/new.ejs");
 };

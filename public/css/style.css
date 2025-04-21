@@ -64,6 +64,15 @@ body {
   align-items: space-evenly;
 }
 
+#insta i {
+  text-decoration: none;
+  color: #ff0090;
+}
+
+#privacy {
+  margin-right: 4px;
+}
+
 /* index cards */
 
 .listing-card {
