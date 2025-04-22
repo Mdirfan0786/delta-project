@@ -28,7 +28,15 @@ A full-stack web application for sharing and exploring travel destination listin
 
 ## 📸 Screenshots
 
-> _(Add screenshots of your homepage, listings page, review system, and map integration here)_
+> ![Map](https://github.com/user-attachments/assets/1804d99a-9675-46a6-978e-48fa2ef9a6dd)
+> ![home page](https://github.com/user-attachments/assets/2c6dfd04-c7d8-47b2-8fdd-49aacdac1904)
+> ![show page](https://github.com/user-attachments/assets/8427087d-6657-4127-9def-2a86bce6392b)
+> ![reviews](https://github.com/user-attachments/assets/54b0d28d-5496-4de9-a64d-b40cb08b68f8)
+
+
+
+
+
 
 ---
 
