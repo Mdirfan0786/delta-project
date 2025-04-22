@@ -46,3 +46,43 @@ A full-stack web application for sharing and exploring travel destination listin
    ```bash
    git clone https://github.com/Mdirfan0786/delta-project.git
    cd delta-project
+   
+2. **Install dependencies**
+   ```bash
+   npm install
+   
+3. **Environment Variables**
+   **Create a .env file in the root directory and add the following:**
+   ```bash
+   MAP_TOKEN=your_mapbox_token
+   CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+   CLOUDINARY_KEY=your_cloudinary_key
+   CLOUDINARY_SECRET=your_cloudinary_secret
+   DB_URL=mongodb://localhost:27017/delta-travel
+   SESSION_SECRET=your_session_secret
+
+4. **Run the application**
+   ```bash
+   npm start
+
+5. **Open your browser and go to:**
+   http://localhost:3000
+
+📁 **Folder Structure**
+   ```php
+   delta-project/
+   │
+   ├── models/            # Mongoose schemas
+   ├── routes/            # Express route files
+   ├── views/             # EJS templates
+   ├── public/            # Static assets (CSS, JS, images)
+   ├── utils/             # Utility functions (e.g. geocoding)
+   ├── middlewares/       # Custom middleware
+   ├── app.js             # Express app initialization
+   └── package.json       # Project metadata and scripts4
+
+
+
+
+
+
