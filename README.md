@@ -54,6 +54,7 @@ A full-stack web application for sharing and exploring travel destination listin
 3. **Environment Variables**
    **Create a .env file in the root directory and add the following:**
    ```bash
+   # .env
    MAP_TOKEN=your_mapbox_token
    CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
    CLOUDINARY_KEY=your_cloudinary_key
@@ -66,9 +67,10 @@ A full-stack web application for sharing and exploring travel destination listin
    npm start
 
 5. **Open your browser and go to:**
+   ```arduino
    http://localhost:3000
 
-📁 **Folder Structure Explained**
+6. 📁Folder Structure Explained
    ```bash
    delta-project/
    │
