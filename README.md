@@ -68,18 +68,68 @@ A full-stack web application for sharing and exploring travel destination listin
 5. **Open your browser and go to:**
    http://localhost:3000
 
-📁 **Folder Structure**
-   ```php
-   delta-project/
-   │
-   ├── models/            # Mongoose schemas
-   ├── routes/            # Express route files
-   ├── views/             # EJS templates
-   ├── public/            # Static assets (CSS, JS, images)
-   ├── utils/             # Utility functions (e.g. geocoding)
-   ├── middlewares/       # Custom middleware
-   ├── app.js             # Express app initialization
-   └── package.json       # Project metadata and scripts4
+delta-project/
+│
+├── models/              # Mongoose schemas (Listing, Review, User)
+│   ├── listing.js
+│   ├── review.js
+│   └── user.js
+│
+├── routes/              # All Express route files
+│   ├── listings.js      # CRUD for listings
+│   ├── reviews.js       # CRUD for reviews
+│   └── users.js         # Authentication routes
+│
+├── views/               # EJS templates (HTML pages)
+│   ├── listings/        # All pages related to listings
+│   ├── reviews/         # Review related templates
+│   ├── users/           # Login and signup pages
+│   └── layouts/         # Base templates like boilerplate.ejs
+│
+├── public/              # Static files (CSS, JS, client-side assets)
+│   ├── css/
+│   ├── js/
+│   └── images/
+│
+├── utils/               # Utility functions
+│   ├── cloudinary.js    # Image upload config
+│   └── geocoder.js      # Mapbox geocoding logic
+│
+├── middlewares/         # Custom middleware functions (like isLoggedIn)
+│
+├── .env                 # Environment variables (not pushed to GitHub)
+├── .gitignore           # Files/folders to ignore in git
+├── app.js               # Main app entry point (Express server setup)
+├── package.json         # Project metadata and dependencies
+└── README.md            # Project overview and documentation
+
+
+## ✨ Contributing
+
+We welcome contributions from developers of all levels!  
+If you find a bug or want to add a new feature, feel free to:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-name`)
+3. Commit your changes.
+4. Push to your fork (`git push origin feature-name`)
+5. Create a Pull Request.
+
+Please make sure your code follows the existing style and passes all checks.
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).  
+You are free to use, modify, and distribute this project with proper attribution.
+
+## 🙌 Acknowledgments
+
+Special thanks to:
+
+- [Colt Steele](https://www.udemy.com/course/the-web-developer-bootcamp/) – for the amazing course that inspired this project.
+- [Mapbox](https://www.mapbox.com/) – for the map and geolocation services.
+- [Cloudinary](https://cloudinary.com/) – for image storage and delivery.
+- [Bootstrap](https://getbootstrap.com/) – for frontend styling.
 
 
 
