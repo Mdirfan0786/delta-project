@@ -130,7 +130,6 @@ You are free to use, modify, and distribute this project with proper attribution
 
 Special thanks to:
 
-- [Colt Steele](https://www.udemy.com/course/the-web-developer-bootcamp/) – for the amazing course that inspired this project.
 - [Mapbox](https://www.mapbox.com/) – for the map and geolocation services.
 - [Cloudinary](https://cloudinary.com/) – for image storage and delivery.
 - [Bootstrap](https://getbootstrap.com/) – for frontend styling.
