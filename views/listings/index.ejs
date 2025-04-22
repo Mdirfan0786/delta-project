@@ -1,107 +1,111 @@
 <% layout("layouts/boilerplate") %>
 
 <!-- filters -->
-<div id="filters">
-  <form action="/listings/category/trending" method="get">
-    <div class="filter">
-      <button class="category-btn">
-        <div><i class="fa-solid fa-fire"></i></div>
-        <p>Trending</p>
-      </button>
-    </div>
-  </form>
+<div id="filters" class="filters-wrapper">
+  <div id="filters">
+    <form action="/listings/category/trending" method="get">
+      <div class="filter">
+        <button class="category-btn">
+          <div><i class="fa-solid fa-fire"></i></div>
+          <p>Trending</p>
+        </button>
+      </div>
+    </form>
 
-  <form action="/listings/category/rooms" method="get">
-    <div class="filter">
-      <button class="category-btn">
-        <div><i class="fa-solid fa-bed"></i></div>
-        <p>Rooms</p>
-      </button>
-    </div>
-  </form>
+    <form action="/listings/category/rooms" method="get">
+      <div class="filter">
+        <button class="category-btn">
+          <div><i class="fa-solid fa-bed"></i></div>
+          <p>Rooms</p>
+        </button>
+      </div>
+    </form>
 
-  <form action="/listings/category/iconic cities" method="get">
-    <div class="filter">
-      <button class="category-btn">
-        <div><i class="fa-solid fa-mountain-city"></i></div>
-        <p>Iconic cities</p>
-      </button>
-    </div>
-  </form>
+    <form action="/listings/category/iconic cities" method="get">
+      <div class="filter">
+        <button class="category-btn">
+          <div><i class="fa-solid fa-mountain-city"></i></div>
+          <p>Iconic cities</p>
+        </button>
+      </div>
+    </form>
 
-  <form action="/listings/category/mountains" method="get">
-    <div class="filter">
-      <button class="category-btn">
-        <div><i class="fa-solid fa-mountain"></i></div>
-        <p>Mountains</p>
-      </button>
-    </div>
-  </form>
+    <form action="/listings/category/mountains" method="get">
+      <div class="filter">
+        <button class="category-btn">
+          <div><i class="fa-solid fa-mountain"></i></div>
+          <p>Mountains</p>
+        </button>
+      </div>
+    </form>
 
-  <form action="/listings/category/castles" method="get">
-    <div class="filter">
-      <button class="category-btn">
-        <div><i class="fa-brands fa-fort-awesome"></i></div>
-        <p>Castles</p>
-      </button>
-    </div>
-  </form>
+    <form action="/listings/category/castles" method="get">
+      <div class="filter">
+        <button class="category-btn">
+          <div><i class="fa-brands fa-fort-awesome"></i></div>
+          <p>Castles</p>
+        </button>
+      </div>
+    </form>
 
-  <form action="/listings/category/amazing pools" method="get">
-    <div class="filter">
-      <button class="category-btn">
-        <div><i class="fa-solid fa-person-swimming"></i></div>
-        <p>Amazing pools</p>
-      </button>
-    </div>
-  </form>
+    <form action="/listings/category/amazing pools" method="get">
+      <div class="filter">
+        <button class="category-btn">
+          <div><i class="fa-solid fa-person-swimming"></i></div>
+          <p>Amazing pools</p>
+        </button>
+      </div>
+    </form>
 
-  <form action="/listings/category/camping" method="get">
-    <div class="filter">
-      <button class="category-btn">
-        <div><i class="fa-solid fa-campground"></i></div>
-        <p>Camping</p>
-      </button>
-    </div>
-  </form>
-  <form action="/listings/category/farms" method="get">
-    <div class="filter">
-      <button class="category-btn">
-        <div><i class="fa-solid fa-tractor"></i></div>
-        <p>Farms</p>
-      </button>
-    </div>
-  </form>
+    <form action="/listings/category/camping" method="get">
+      <div class="filter">
+        <button class="category-btn">
+          <div><i class="fa-solid fa-campground"></i></div>
+          <p>Camping</p>
+        </button>
+      </div>
+    </form>
+    <form action="/listings/category/farms" method="get">
+      <div class="filter">
+        <button class="category-btn">
+          <div><i class="fa-solid fa-tractor"></i></div>
+          <p>Farms</p>
+        </button>
+      </div>
+    </form>
 
-  <form action="/listings/category/arctic" method="get">
-    <div class="filter">
-      <button class="category-btn">
-        <div><i class="fa-solid fa-snowflake"></i></div>
-        <p>Arctic</p>
-      </button>
-    </div>
-  </form>
+    <form action="/listings/category/arctic" method="get">
+      <div class="filter">
+        <button class="category-btn">
+          <div><i class="fa-solid fa-snowflake"></i></div>
+          <p>Arctic</p>
+        </button>
+      </div>
+    </form>
 
-  <form action="/listings/category/domes" method="get">
-    <div class="filter">
-      <button class="category-btn">
-        <div><i class="fa-solid fa-igloo"></i></div>
-        <p>Domes</p>
-      </button>
-    </div>
-  </form>
+    <form action="/listings/category/domes" method="get">
+      <div class="filter">
+        <button class="category-btn">
+          <div><i class="fa-solid fa-igloo"></i></div>
+          <p>Domes</p>
+        </button>
+      </div>
+    </form>
+  </div>
 
-  <div class="tax-toggle">
-    <div class="form-check-reverse form-switch">
-      <input
-        class="form-check-input"
-        type="checkbox"
-        role="switch"
-        id="switchCheckDefault"
-      />
-      <label class="form-check-label" for="switchCheckDefault"
-        >Display total after taxes</label
-      >
+  <div style="text-align: center">
+    <div class="tax-toggle">
+      <div class="form-check-reverse form-switch">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          role="switch"
+          id="switchCheckDefault"
+        />
+        <label class="form-check-label" for="switchCheckDefault"
+          >Display total after taxes</label
+        >
+      </div>
     </div>
   </div>
 </div>
