@@ -68,40 +68,42 @@ A full-stack web application for sharing and exploring travel destination listin
 5. **Open your browser and go to:**
    http://localhost:3000
 
-delta-project/
-│
-├── models/              # Mongoose schemas (Listing, Review, User)
-│   ├── listing.js
-│   ├── review.js
-│   └── user.js
-│
-├── routes/              # All Express route files
-│   ├── listings.js      # CRUD for listings
-│   ├── reviews.js       # CRUD for reviews
-│   └── users.js         # Authentication routes
-│
-├── views/               # EJS templates (HTML pages)
-│   ├── listings/        # All pages related to listings
-│   ├── reviews/         # Review related templates
-│   ├── users/           # Login and signup pages
-│   └── layouts/         # Base templates like boilerplate.ejs
-│
-├── public/              # Static files (CSS, JS, client-side assets)
-│   ├── css/
-│   ├── js/
-│   └── images/
-│
-├── utils/               # Utility functions
-│   ├── cloudinary.js    # Image upload config
-│   └── geocoder.js      # Mapbox geocoding logic
-│
-├── middlewares/         # Custom middleware functions (like isLoggedIn)
-│
-├── .env                 # Environment variables (not pushed to GitHub)
-├── .gitignore           # Files/folders to ignore in git
-├── app.js               # Main app entry point (Express server setup)
-├── package.json         # Project metadata and dependencies
-└── README.md            # Project overview and documentation
+📁 **Folder Structure Explained**
+   ```bash
+   delta-project/
+   │
+   ├── models/              # Mongoose schemas (Listing, Review, User)
+   │   ├── listing.js
+   │   ├── review.js
+   │   └── user.js
+   │
+   ├── routes/              # All Express route files
+   │   ├── listings.js      # CRUD for listings
+   │   ├── reviews.js       # CRUD for reviews
+   │   └── users.js         # Authentication routes
+   │
+   ├── views/               # EJS templates (HTML pages)
+   │   ├── listings/        # All pages related to listings
+   │   ├── reviews/         # Review related templates
+   │   ├── users/           # Login and signup pages
+   │   └── layouts/         # Base templates like boilerplate.ejs
+   │
+   ├── public/              # Static files (CSS, JS, client-side assets)
+   │   ├── css/
+   │   ├── js/
+   │   └── images/
+   │
+   ├── utils/               # Utility functions
+   │   ├── cloudinary.js    # Image upload config
+   │   └── geocoder.js      # Mapbox geocoding logic
+   │
+   ├── middlewares/         # Custom middleware functions (like isLoggedIn)
+   │
+   ├── .env                 # Environment variables (not pushed to GitHub)
+   ├── .gitignore           # Files/folders to ignore in git
+   ├── app.js               # Main app entry point (Express server setup)
+   ├── package.json         # Project metadata and dependencies
+   └── README.md            # Project overview and documentation
 
 
 ## ✨ Contributing
