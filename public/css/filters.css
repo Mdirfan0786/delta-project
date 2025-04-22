@@ -53,7 +53,7 @@
 }
 
 /* Responsive: Mobile friendly layout */
-@media (max-width: 576px) {
+@media (max-width: 500px) {
   #filters {
     flex-wrap: wrap;
     justify-content: center;
