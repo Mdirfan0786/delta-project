@@ -136,6 +136,19 @@ Special thanks to:
 - [Cloudinary](https://cloudinary.com/) – for image storage and delivery.
 - [Bootstrap](https://getbootstrap.com/) – for frontend styling.
 
+---
+
+## 📬 Contact
+
+If you want to connect or collaborate with me:
+
+- **GitHub:** https://github.com/Mdirfan0786
+- **Portfolio:** https://apna-portfolio-drab.vercel.app/
+
+---
+
+⭐ If you like this project, please consider giving it a **star** on GitHub!
+
 
 
 
